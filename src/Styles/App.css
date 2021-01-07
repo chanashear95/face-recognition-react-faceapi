@@ -1,0 +1,60 @@
+.app{
+  display: flex;
+   align-items: center;
+}
+
+.app p:first-child{
+  width: 50%;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.main{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+canvas{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.img-container{
+  display: inline-block;
+}
+
+button{
+  display: block;
+  margin: 10px auto;
+}
+
+img{
+  border: 5px solid #eee;
+}
+
+input:last-of-type{
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 730px){
+    .app{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .app p:first-child{
+      width: 100%;
+      text-align: center;
+    }
+
+    .main{
+      height: auto
+    }
+}
